@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Awesome Online Videos</title>
+	<style>
+	   #btn{
+	   	   background-color: #4CAF50;
+           border: none;
+           color: white;
+           padding: 15px 32px;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           font-size: 16px;
+		   margin: 4px 2px;
+           cursor: pointer;
+	     }
+	</style>
+</head>
+
+<body>
+
+  <section id="top_horizontal_section">
+      <div id="part1" align="center" style="margin-bottom: 0;">
+         <img width="50px" src="images.jpg">
+         <h1>Awesome Online Videos</h1>
+      </div>
+  </section>
+
+  <section id="bottom_horizontal_section">
+     <div id="part2" align="center" style="margin-bottom: 0;">
+        <video id="video1" width="420" poster="html5.png">
+            <source src="what_is_html5.mp4" type="video/mp4">
+        </video><br/>
+        <button id="btn" type="button" onclick="play()">Play</button>
+        <button id="btn" type="button" onclick="Pause()">Pause</button> 
+     </div>
+  </section>
+
+  <script>
+       var myVideo = document.getElementById("video1");
+       function play() { 
+         myVideo.play();
+	   }
+	   function Pause(){
+	   	   myVideo.pause();
+	   }
+   </script>
+
+</body>
+</html>
